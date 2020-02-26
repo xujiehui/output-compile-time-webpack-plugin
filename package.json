@@ -1,10 +1,13 @@
 {
   "name": "output-compile-time-webpack-plugin",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "output-compile-time-webpack-plugin 是一款Webpack插件，用于输出Webpack编译项目所用的时间。",
-  "main": "./dist/OutputCompileTimeWebpackPlugin.js",
+  "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "patch": "npm version patch && git push --follow-tags && npm publish",
+    "minor": "npm version minor && git push --follow-tags && npm publish",
+    "major": "npm version major && git push --follow-tags && npm publish"
   },
   "keywords": [
     "output-compile-time-webpack-plugin",
@@ -16,12 +19,5 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:xujiehui/output-compile-time-webpack-plugin.git"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "babel-loader": "^8.0.6",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
   }
 }

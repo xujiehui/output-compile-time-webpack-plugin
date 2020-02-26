@@ -20,3 +20,19 @@ module.exports = {
   ]
 }
 ```
+
+```js
+// vue.config.js
+module.exports = {
+  // ... 省略其他配置
+  configureWebpack: config => {
+    // 用cdn方式引入
+    // ... 省略其他配置
+    const plugins = [
+      // ... 省略其他插件
+      new OutputCompileTimeWebpackPlugin()
+    ]
+    config.plugins.push(...plugins)
+  }
+}
+```
