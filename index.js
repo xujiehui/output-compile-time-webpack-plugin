@@ -15,7 +15,11 @@ class OutputCompileTimePlugin {
       if (typeof this.callback === 'function') {
         this.callback((duration / 1000).toFixed(2))
       } else {
-        console.log(`编译用时：${(duration / 1000).toFixed(2)}s`)
+        console.log(
+          `\u001b[30;42m 编译用时 \u001b[44m ${(duration / 1000).toFixed(
+            2
+          )}s \u001b[0m`
+        )
       }
     })
   }
