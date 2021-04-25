@@ -1,6 +1,6 @@
 {
   "name": "output-compile-time-webpack-plugin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "output-compile-time-webpack-plugin 是一款Webpack插件，用于输出Webpack编译项目所用的时间。",
   "main": "index.js",
   "scripts": {
